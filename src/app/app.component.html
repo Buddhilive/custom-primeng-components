@@ -1,0 +1,12 @@
+<form #myForm="ngForm" (ngSubmit)="onSubmitTemplateBased()">
+  <bl-multiselect
+    [options]="cities"
+    [(ngModel)]="selectedCities"
+    optionLabel="name"
+    name="city"
+    ngDefaultControl
+  >
+  </bl-multiselect>
+
+  <button type="submit">Done</button>
+</form>

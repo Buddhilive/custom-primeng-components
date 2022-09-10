@@ -3,8 +3,9 @@
     [options]="cities"
     [(ngModel)]="selectedCities"
     optionLabel="name"
+    optionValue="code"
     name="city"
-    ngDefaultControl
+    (onChange)="onChangeTriggered($event)" 
   >
   </bl-multiselect>
 

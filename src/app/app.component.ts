@@ -30,4 +30,8 @@ export class AppComponent {
   onSubmitTemplateBased() {
     console.log(this.selectedCities);
   }
+
+  onChangeTriggered(event: any) {
+    console.log(event);
+  }
 }
